@@ -1,0 +1,49 @@
+#boasVindas {
+    background-color: rgba(42, 42, 172, 0.534);
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(8, 33, 177);
+}
+
+#coluna{
+    background-color: rgba(8, 33, 177, 0.308);
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+}
+
+.coluna-50 {
+    padding: 15px;
+    width: 50%;
+    margin-left: 60px;
+}
+
+.alerta {
+    color: red;
+
+}
+
+.rodape {
+    background-color: rgba(42, 42, 172, 0.534);
+    color: rgb(8, 33, 177);
+    text-align: center;
+    padding: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+body {
+
+    padding: 50px;
+}
+
+#btnacessar {
+    width: 100px;
+    border-radius: 5px;
+}
+
+#btnacessar:hover {
+    border-radius: 5px;
+    width: 100px;
+    background-color: rgba(230, 220, 94, 0.507);
+}
