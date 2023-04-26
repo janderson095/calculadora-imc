@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../calculadora-imc/calc-imc.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <div id="boasVindas">
+        <h2 id="area">Bem-vindo!</h2>
+        <button onclick="entrar()" id="btnacessar">Acessar</button><br><br>
+    </div>
+
+    <div class="coluna">
+        <h3 id="descExercicio">
+            Resultado abaixo de 17 - Muito abaixo do peso; <br>
+            Resultado entre 17 e 18,49 - Abaixo do peso; <br>
+            Resultado entre 18,5 e 24,99 - Peso ideal; <br>
+            Resultado entre 25 e 29,99 - Sobrepeso; 
+        </h3>
+        <h3 id="descExercicio">
+            Resultado entre 30 e 34,9 - Obesidade grau I; <br>
+            Resultado entre 35 e 39,9 - Obesidade grau II (severa); <br>
+            Resultado acima de 4 - Obesidade grau III (morbida); <br>
+            <p class="procure">Procure sempre um Médico Especialista</p> <br>
+        </h3>
+    </div>
+
+    <div class="rodape">
+        <form onsubmit="return calcular(event)">
+            <p>Informação da Primeira pessoa</p>
+            <label for="">Digite seu Nome:</label><br>
+            <input type="text" nome="nome1" id="nome1" placeholder="Exemplo: Fulano"><br><br>
+
+            <label for="">Digite seu peso:</label><br>
+            <input type="text" nome="peso1" id="peso1" placeholder="Exemplo: 65"><br><br>
+
+            <label for="">Digite sua altura:</label><br>
+            <input type="text" nome="altura1" id="altura1" placeholder="Exemplo: 1.90"><br><br>
+            <div id="resultado1"></div>
+
+            <p>Informação da Segunda pessoa</p>
+            <label for="">Digite seu Nome:</label><br>
+            <input type="text" nome="nome2" id="nome2" placeholder="Exemplo: Fulano"><br><br>
+
+            <label for="">Digite seu peso:</label><br>
+            <input type="text" nome="peso2" id="peso2" placeholder="Exemplo: 65"><br><br>
+
+            <label for="">Digite sua altura:</label><br>
+            <input type="text" nome="altura2" id="altura2" placeholder="Exemplo: 1.90"><br><br>
+            <div id="resultado2"></div>
+
+            <p>Informação da Terceira pessoal</p>
+            <label for="">Digite seu Nome:</label><br>
+            <input type="text" nome="nome3" id="nome3" placeholder="Exemplo: Fulano"><br><br>
+
+            <label for="">Digite seu peso:</label><br>
+            <input type="text" nome="peso3" id="peso3" placeholder="Exemplo: 65"><br><br>
+
+            <label for="">Digite sua altura:</label><br>
+            <input type="text" nome="altura3" id="altura3" placeholder="Exemplo: 1.90"><br><br>
+            <div id="resultado3"></div>
+
+            <input type="submit" value="Calcular IMC">
+        </form>
+    
+    </div>
+    <script src="../calculadora-imc/calc-imc.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+#boasVindas {
+    /* background-color: blue; */
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(43, 226, 223);
+}
+
+.coluna{
+    background-color: aqua;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#descExercicio {
+    padding: 15px;
+    width: 50%;
+    margin-left: 60px;
+}
+
+.procure {
+    color: red;
+
+}
+
+.rodape {
+    /* background-color: blue; */
+    color: rgb(43, 226, 223);
+    text-align: center;
+    padding: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
