@@ -7,15 +7,15 @@
 //             Resultado acima de 4 - Obesidade grau III (morbida); 
 
 var area = document.getElementById("area");
-function entrar(){
+function entrar() {
     var nome = prompt("Digite o seu nome");
-    if(nome=="" || nome==null){
+    if (nome == "" || nome == null) {
         alert("Por favor Preencher todos os Campos!");
         area.innerHTML = "Clique no botão para acessar..."
     }
 
-    else{
-        area.innerHTML = "Seja Bem-Vindo: " +nome
+    else {
+        area.innerHTML = "Seja Bem-Vindo: " + nome
     }
 }
 
@@ -25,9 +25,9 @@ var peso;
 var imc;
 var resultado;
 
-function calcular(event){
+function calcular(event) {
     event.preventDefault();
-    
+
     nome = (document.getElementById("nome").value);
     peso = parseFloat(document.getElementById("peso").value);
     altura = parseFloat(document.getElementById("altura").value);
@@ -39,28 +39,28 @@ function calcular(event){
     console.log(imc);
 
     resultado = document.getElementById("resultado");
-    
 
-    if(imc < 17){
-        resultado.innerHTML = "<br/>"+ nome +" Seu resultado foi: "+ imc.toFixed(2) + "<br/> Cuidado você está muito abaixo do peso!";
+
+    if (imc < 17) {
+        resultado.innerHTML = "<br/>" + nome + " Seu resultado foi: " + imc.toFixed(2) + "<br/> Cuidado você está muito abaixo do peso!";
     }
     else if (imc >= 17 && imc <= 18.49) {
-        resultado.innerHTML = "<br/>"+ nome +" Seu resultado foi: "+imc.toFixed(2) +" <br/> Abaixo do peso!";
+        resultado.innerHTML = "<br/>" + nome + " Seu resultado foi: " + imc.toFixed(2) + " <br/> Abaixo do peso!";
     }
     else if (imc >= 18.5 && imc <= 24.99) {
-        resultado.innerHTML = "<br/>"+ nome +" Seu resultado foi: "+ imc.toFixed(2) + "<br/> Você está no peso ideal!";
+        resultado.innerHTML = "<br/>" + nome + " Seu resultado foi: " + imc.toFixed(2) + "<br/> Você está no peso ideal!";
     }
     else if (imc >= 25 && imc <= 29.99) {
-        resultado.innerHTML = "<br/>"+ nome +" Seu resultado foi: "+ imc.toFixed(2) + "<br/> Você está com sobrepeso!"
+        resultado.innerHTML = "<br/>" + nome + " Seu resultado foi: " + imc.toFixed(2) + "<br/> Você está com sobrepeso!"
     }
     else if (imc >= 30 && imc <= 34.99) {
-        resultado.innerHTML = "<br/>"+ nome +" Seu resultado foi : "+ imc.toFixed(2) + "<br/> CUIDADO, obesidade grau I!";
+        resultado.innerHTML = "<br/>" + nome + " Seu resultado foi : " + imc.toFixed(2) + "<br/> CUIDADO, obesidade grau I!";
     }
-    else if (imc >= 35 && imc <=39.99) {
-        resultado.innerHTML = "<br/>"+ nome +" Seu resultado foi: "+ imc.toFixed(2) + "<br/> CUIDADO, obesidade grau II!";
+    else if (imc >= 35 && imc <= 39.99) {
+        resultado.innerHTML = "<br/>" + nome + " Seu resultado foi: " + imc.toFixed(2) + "<br/> CUIDADO, obesidade grau II!";
     }
     else if (imc >= 40) {
-        resultado.innerHTML = "<br/>"+ nome +" Seu resultado foi: "+ imc.toFixed(2) + "<br/> CUIDADO, obesidade grau III!";
+        resultado.innerHTML = "<br/>" + nome + " Seu resultado foi: " + imc.toFixed(2) + "<br/> CUIDADO, obesidade grau III!";
     }
 
     document.getElementById("nome").value = "";
